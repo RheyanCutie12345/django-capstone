@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <title>Evaluation System</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<header>
+    <h1>Evaluation System</h1>
+    <nav>
+        <button>Admin</button>
+    </nav>
+</header>
+<div class="container">
+    <div class="img_container">
+        <img src="{% static 'image/si_logo.png' %}">
+        <p>Evaluate Performance of Faculty and Staffs</p>
+    </div>
+    <div class="form_container">
+
+        <form method="POST">
+             <h1>Student Access</h1>
+            <input type="text" name="LRN" class="forms" placeholder="Learners Reference Number" required>
+              <input type="password" name="password" class="forms" placeholder="Password" required>
+            <input type="checkbox" id="checkbox" name="forgotPass">
+            <label for="checkbox">Forgot Password</label>
+            <input type="submit" name="submit" class="submit" placeholder="Log in">
+        </form>
+    </div>
+</div>
+</body>
+</html>
